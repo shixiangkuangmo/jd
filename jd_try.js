@@ -110,14 +110,22 @@ async function getNewTryList(tabId) {
         //   applyNum: "已申请人数",
         //   supplyNum: "提供数量",
         // });
+        let strfilter = process.env["jd_filter"] || null;
+        let arrFilter = strfilter.split("#");
         for(let i=0;i<data.data.feedList.length;i++){
           let item = data.data.feedList[i];
-          if(item["skuTitle"].indexOf("流量卡")>-1 || item["skuTitle"].indexOf("手机卡")>-1){
-            continue;
-          }else{
+          let isFilter = false;
+          for(let j=0;j<arrFilter.length;j++){
+            if(item["skuTitle"].indexOf(arrFilter[j]) > -1){
+              isFilter = true;
+              break;
+            }
+          }
+          if(!isFilter){
             activeData.push(item);
           }
         }
+        
       } else {
         console.log("获取试用列表信息失败");
       }

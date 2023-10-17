@@ -31,3 +31,7 @@
 推送变量：
 1.push_token，为你的push_plus token
 2.push_user, 为你的群组编码，不填只推送自己
+
+过滤变量：
+jd_filter,#号隔开
+例如：手机卡#流量卡
