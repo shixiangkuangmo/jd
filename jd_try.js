@@ -16,6 +16,8 @@ let logObj = {};
 let activeData = [];
 let pt_key = "";
 let pt_pin = "";
+let maxTryTimes = process.env["jd_try_maxlength"] || 24
+maxTryTimes = Number(maxTryTimes)
 let cookie = `pt_key=${pt_key}; pt_pin=${pt_pin};${getBaseCookie()}`,
   uuid = "0326636623568363-6366565616634613",
   area = "15_1158_46343_59377",
@@ -319,6 +321,7 @@ async function main() {
     applyNum: 已申请人数,
     skuTitle:物品名称
     */
+    activeData = activeData.slice(0,maxTryTimes);
     console.log(`共获取到${activeData.length}个商品！`);
     let strusers = process.env["jd_ck"] || "";
     let users = strusers.split("#");

@@ -40,6 +40,11 @@
 jd_filter,#号隔开
 例如：手机卡#流量卡
 
+2023-10-17 11：45：00
+新增最大申请次数：
+变量名：jd_try_maxlength
+
+
 请重新下载
 
 一键拉库：ql repo https://github.com/shixiangkuangmo/jd.git
