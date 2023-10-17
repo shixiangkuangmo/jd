@@ -171,9 +171,10 @@ async function tryApply(u, item, bh,a,b) {
         ),
       });
       if (status === 200 && data) {
+        console.log(`第${b}个用户，第${a}个商品: ${item.skuTitle} ${data.message}`);
         logObj[u] ? logObj[u].push(`${item.skuTitle} ${data.message}`) : logObj[u] = [`${item.skuTitle} ${data.message}`];
       } else {
-        console.log("请求出错");
+        console.log(`第${b}个用户，第${a}个商品: ${item.skuTitle} 请求出错`);
         logObj[u] ? logObj[u].push(`${item.skuTitle} 请求出错`) : logObj[u] = [`${item.skuTitle} 请求出错`];
       }
     } else {
