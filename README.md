@@ -48,5 +48,3 @@ jd_filter,#号隔开
 试用商品每次取最新的24(?)个
 
 请重新下载
-
-一键拉库：ql repo https://github.com/shixiangkuangmo/jd.git
