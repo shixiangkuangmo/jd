@@ -42,6 +42,4 @@ jd_filter,#号隔开
 
 请重新下载
 
-ql repo https://github.com/shixiangkuangmo/jd.git
-
 一键拉库：ql repo https://github.com/shixiangkuangmo/jd.git
