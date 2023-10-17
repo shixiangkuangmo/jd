@@ -308,12 +308,12 @@ function watchLogs(v, n) {
 }
 async function main() {
   try {
-    //await getTryTabs();
-    // for (let i = 0; i < tabData.length; i++) {
-    //   await getNewTryList(tabData[i]["tabId"]);
-    // }
-    await getNewTryList("221");//手机
-    await getNewTryList("222");//电脑
+    await getTryTabs();
+    for (let i = 0; i < tabData.length; i++) {
+      await getNewTryList(tabData[i]["tabId"]);
+    }
+    //await getNewTryList("221");//手机
+    //await getNewTryList("222");//电脑
     /*
     trialActivityId: 活动id,
     trialPrice: 试用价格,
@@ -322,7 +322,7 @@ async function main() {
     applyNum: 已申请人数,
     skuTitle:物品名称
     */
-    activeData = activeData.slice(0,maxTryTimes);
+    activeData = activeData.slice(-maxTryTimes);
     console.log(`共获取到${activeData.length}个商品！`);
     let strusers = process.env["jd_ck"] || "";
     let users = strusers.split("#");
