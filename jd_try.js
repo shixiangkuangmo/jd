@@ -285,7 +285,7 @@ function watchLogs(v, n) {
     let str = "京东试用通知：\n";
     for (let i = 0; i < keys.length; i++) {
       str += "用户：" + keys[i] + "：\n";
-      str += logObj[keys[i]].join("，") + "\n\n";
+      str += logObj[keys[i]].join("，\n") + "\n\n";
     }
     let len = Math.round(str.length / 800);
     for (let j = 0; j < len; j++) {
