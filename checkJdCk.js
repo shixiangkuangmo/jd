@@ -42,7 +42,7 @@ async function autoCheck(ckname, title) {
     }
   }
   if (sendmsg.length)
-    sendNotify.sendNotify(title, sendmsg,'\n\n本通知 By：食翔狂魔', { PUSH_PLUS_TOKEN: "c1d90c1822f74a748b67480ca9b67c74", PUSH_PLUS_USER: "jd001" });
+    sendNotify.sendNotify(title, sendmsg,'\n\n本通知 By：食翔狂魔', { PUSH_PLUS_TOKEN: process.env["push_token"] || "", PUSH_PLUS_USER: process.env["push_user"] || "" });
   return "ok";
 }
 autoCheck("jd_ck","京东通知")

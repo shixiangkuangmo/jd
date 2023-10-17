@@ -25,3 +25,9 @@
 2.
 
 [![1.jpg](https://pic.ziyuan.wang/2023/10/17/guest_319f47d8b9f27_IP13.113.193.135_UPTIME1697509464.jpg)](https://pic.ziyuan.wang/2023/10/17/guest_319f47d8b9f27_IP13.113.193.135_UPTIME1697509464.jpg)
+
+
+
+推送变量：
+1.push_token，为你的push_plus token
+2.push_user, 为你的群组编码，不填只推送自己

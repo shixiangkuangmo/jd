@@ -290,7 +290,7 @@ function watchLogs(v, n) {
     let len = Math.round(str.length / 800);
     for (let j = 0; j < len; j++) {
       setTimeout(() => {
-        sendNotify.sendNotify("京东试用:", str.slice(j * 8000, (j + 1) * 8000), '\n\n本通知 By：食翔狂魔', { PUSH_PLUS_TOKEN: "c1d90c1822f74a748b67480ca9b67c74", PUSH_PLUS_USER: "jd001" });
+        sendNotify.sendNotify("京东试用:", str.slice(j * 8000, (j + 1) * 8000), '\n\n本通知 By：食翔狂魔', { PUSH_PLUS_TOKEN: process.env["push_token"] || "", PUSH_PLUS_USER: process.env["push_user"] || "" });
       }, j * 4000)
     }
   }
