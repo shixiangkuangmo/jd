@@ -26,12 +26,17 @@
 
 [![1.jpg](https://pic.ziyuan.wang/2023/10/17/guest_319f47d8b9f27_IP13.113.193.135_UPTIME1697509464.jpg)](https://pic.ziyuan.wang/2023/10/17/guest_319f47d8b9f27_IP13.113.193.135_UPTIME1697509464.jpg)
 
+2023-10-17 11：04：00
 
+删除我的推送信息
 
 推送变量：
 1.push_token，为你的push_plus token
 2.push_user, 为你的群组编码，不填只推送自己
 
-过滤变量：
+新增过滤变量：
 jd_filter,#号隔开
 例如：手机卡#流量卡
+
+请重新下载
+
