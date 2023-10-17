@@ -14,3 +14,14 @@
 
 多用户请用#分割，例如：123@456#789@1011
 
+青龙创建两个任务：
+
+1.
+
+[![1.jpg](https://pic.ziyuan.wang/2023/10/17/guest_194bddcda2846_IP13.113.193.135_UPTIME1697509393.jpg)](https://pic.ziyuan.wang/2023/10/17/guest_194bddcda2846_IP13.113.193.135_UPTIME1697509393.jpg)
+
+
+
+2.
+
+[![1.jpg](https://pic.ziyuan.wang/2023/10/17/guest_319f47d8b9f27_IP13.113.193.135_UPTIME1697509464.jpg)](https://pic.ziyuan.wang/2023/10/17/guest_319f47d8b9f27_IP13.113.193.135_UPTIME1697509464.jpg)
